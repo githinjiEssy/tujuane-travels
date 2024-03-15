@@ -6,6 +6,7 @@
     --color-primary-variant: #F2A70C;
     --title-color: #ececec;
     --text-color-1: #ffffff;
+    --text-color-2: #0a0a0a;
     --color-bg-1: #593C3C;
     --color-bg-2: #302E55;
     --border: .1rem solid #ff6700;
@@ -121,18 +122,20 @@ body {
 }
 
 /*Content*/
+.home__container {
+    width: 88%;
+    margin-left: 8%;
+}
 .home__content {
-    width: 90%;
     height: 65vh;
-    margin-left: 5%;
-    margin: 80px;
+    margin: 65px;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
 .home__txt {
-    width: 60%;
+    width: 65%;
     margin: 20px;
 }
 
@@ -199,5 +202,60 @@ body {
 }  
 
 .empty {
-    width: 30%;
+    width: 20%;
 }
+
+/*========== FOOTER ==========*/
+.footer__container {
+    width: 60%;
+    height: 123px;
+}
+
+.footer {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+    background-color: var(--color-bg-1);
+    border-top-left-radius: 80px;
+}
+
+.footer__socials {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 30px; 
+    margin-top: 20px;
+    
+}
+
+.socials li a {
+    font-size: 2rem;
+}
+
+.contacts {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-right: 60px;
+    width: 50%;
+}
+
+.contacts h3{
+    color: var(--text-color-2);
+    margin-top: 20px;
+}
+
+.contacts h3 a {
+    color: var(--text-color-2);
+}
+
