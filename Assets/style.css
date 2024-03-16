@@ -260,3 +260,31 @@
     color: var(--text-color-2);
 }
 
+/*========== About ==========*/
+.about__container {
+    color: var(--text-color-2);
+    background-color: #593C3C;
+    width: 100%;
+    height: 100vh;
+}
+.nav__container {
+    background-color: #F2A70C;
+}
+#about{
+    background: indianred;
+    padding: 2px;
+    
+}
+
+#about .icon-btn {
+    width: 7%;
+    height: 30px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    border-left: solid rgba(0, 0, 0, 0.75);
+}
+
+#about .icon-btn i {
+    font-size: 2rem;
+}
