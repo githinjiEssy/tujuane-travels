@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    /*========== Colors ==========*/
+    --color-primary: #FF6700;
+    --color-primary-variant: #F2A70C;
+    --title-color: #ececec;
+    --text-color-1: #ffffff;
+    --text-color-2: #0a0a0a;
+    --color-bg-1: #593C3C;
+    --color-bg-2: #302E55;
+    --border: .1rem solid #ff6700;
+    
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --transition: all 400ms ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*============================== About ======================*/
+.about__container {
+    color: var(--text-color-2);
+    background-color: #593C3C;
+    width: 100%;
+    height: 130vh;
+}
+
+.nav__container {
+    background-color: #F2A70C;
+}
+
+#about{
+    padding: 2px;
+}
+ 
+#about .icon-btn {
+    width: 7%;
+    height: 30px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    border-left: solid rgba(0, 0, 0, 0.75);
+}
+ 
+#about .icon-btn i {
+    font-size: 2rem;
+}
+ 
+/* About content */
+.about__content {
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+ 
+.about__title {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+ 
+.about__title h1 {
+    font-size: 3rem;
+}
+
+.top {
+    display: flex;
+    gap: 50px;
+}
+ 
+.top-img {
+    width: 100%;
+    align-content: center;
+} 
+ 
+.top-img img{
+   height: 100%;
+   box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
+   border-radius: 20px;
+}
+ 
+.top__txt h1{
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 20px;
+} 
+ 
+.bottom{
+    display: flex;
+    gap: 50px;
+    margin-top:70px;
+}
+ 
+.bottom-img {
+    width: 100%;
+    height: 44vh;
+    align-content: center;
+}
+ 
+.bottom-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+}
+ 
+.bottom__txt h1{
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
