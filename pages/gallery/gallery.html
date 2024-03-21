@@ -4,34 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="gallery.css">
+    <script src="https://kit.fontawesome.com/eabb1ca807.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <section class="exhibition" id="exhibition">
-        <div class="container exhibition__container">
-            <h2 class="exhibition__title">Exhibition</h2>
-            <div class="empty exhibition__empty"></div>
-            <div class="exhibition__head">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestias eligendi 
-                    neque deserunt provident in possimus excepturi nemo, animi aliquam harum dolor perferendis 
-                    voluptate illum, similique itaque dolores asperiores. Hic.
-                </p>
-                <a href="mailto:esthergithinji49@gmail.com" class="contact__btn exhibition__btn">
-                    <i class="uil uil-arrow-up-right"></i>
-                    <p>CONTACT - GET IN TOUCH </p>
-                </a>
-            </div>
-            <div class="exhibition__gallery">
-                <article><img src="../images/gallery7.webp" alt=""></article>
-                <article><img src="../images/gallery1(Kenya).jpg" alt=""></article>
-                <article><img src="../images/gallery2(south Africa).jpg" alt=""></article>
-                <article><img src="../images/gallery3.jpg" alt=""></article>
-                <article><img src="../images/gallery4.jpg" alt=""></article>
-                <article><img src="../images/gallery5.jpg" alt=""></article>
-                <article><img src="../images/gallery8.webp" alt=""></article>
-            </div>
-        </div>
-        </section>
+  <div class="gallery__cotainer">
+
+    <!--========================= NAVBAR ================================-->
+    <div class="nav__container">
+      <nav class="navbar" id="about">
+        <img src="../../images/8H4npL-LogoMakr.png" alt="navbar logo" class="nav__logo">
+
+        <ul class="nav__links">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+          <button class="icon-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </nav>
+    </div>
+
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+          <h2 class="gallery__title">Gallery</h2>
+          <div class="empty gallery__empty"></div>
+          <div class="gallery__head">
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestias eligendi 
+                  neque deserunt provident in possimus excepturi nemo, animi aliquam harum dolor perferendis 
+                  voluptate illum, similique itaque dolores asperiores. Hic.
+              </p>
+          </div>
+          <div class="image-grid">
+              <div class="image-row">
+                <div class="image image-01"></div>  
+                <div class="image image-02"></div>  
+                <div class="image image-03"></div>  
+              </div> 
+              <div class="image-row">
+                <div class="image image-04"></div>  
+                <div class="image image-05"></div>  
+              </div>  
+              <div class="image-row">
+                <div class="image image-06"></div>  
+                <div class="image image-07"></div>  
+                <div class="image image-08"></div>  
+                <div class="image image-09"></div>  
+              </div>  
+              <div class="image-row">
+                <div class="image image-10"></div>  
+                <div class="image image-11"></div>  
+                <div class="image image-12"></div>  
+              </div> 
+          </div>  
+      </div>
+    </section>
+  </div>
 </body>
 </html>

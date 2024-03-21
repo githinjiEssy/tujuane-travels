@@ -33,8 +33,58 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
+/*Navbar*/
+.navbar {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--color-bg-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav__logo {
+    height: 5rem;
+}
+ 
+.navbar .nav__links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav__links a{
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: var(--text-color-2);
+    cursor: pointer;
+    transition: var(--transition);
+ }
+ 
+ 
+.navbar .nav__links a:hover {
+    color: var(--color-primary);
+    border-bottom: solid var(--color-primary) .2rem;
+    padding-bottom: .5rem;
+}
+
+.icon-btn {
+    width: 7%;
+    height: 30px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    border-left: solid rgba(0, 0, 0, 0.75);
+}
+ 
+.icon-btn i {
+    font-size: 2rem;
+}
+
 /*============================== About ======================*/
-.about__container {
+/* .about__container {
     color: var(--text-color-2);
     background-color: #593C3C;
     width: 100%;
@@ -48,22 +98,10 @@ html {
 #about{
     padding: 2px;
 }
- 
-#about .icon-btn {
-    width: 7%;
-    height: 30px;
-    margin-right: 10px;
-    background: none;
-    border: none;
-    border-left: solid rgba(0, 0, 0, 0.75);
-}
- 
-#about .icon-btn i {
-    font-size: 2rem;
-}
+
  
 /* About content */
-.about__content {
+/* .about__content {
     align-items: center;
     padding: 10px;
     width: 80%;
@@ -126,4 +164,155 @@ html {
     color: var(--color-primary);
     font-size: 2rem;
     margin-bottom: 20px;
+} */
+
+/*============================== About 2 ======================*/
+.about__section {
+  width: 100%;
+  align-items: center;
+}
+
+.about__content {
+  background-color: var(--color-bg-1);
+  width: 86%;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 30px;
+  display: flex;
+  gap: 50px;
+  border-radius: 40px;
+}
+  
+.about__left {
+  width: 60%;
+  margin-left: 60px;
+}
+  
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 4px;
+  color: var(--color-primary);
+}
+  
+.about__txt h1 {
+  margin-bottom: 18px;
+  color: var(--color-primary);
+}
+
+.about__txt .txt-1{
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+}
+
+.about__txt .txt-2 {
+  margin-bottom: .5px;
+  color: var(--text-color-1);
+}
+  
+.about__btn button{
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid black;
+  transition: color .5s;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+  
+.about__right {
+  width: 40%;
+}
+
+.cookie-card {
+  width: 70%;
+  padding: 1rem;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+
+.title {
+  font-weight: 600;
+  color: rgb(31 41 55);
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(75 85 99);
+}
+
+.description a {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246);
+}
+
+.description a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  flex-shrink: 0;
+}
+
+.pref {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(31 41 55 );
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  background-color: transparent;
+}
+
+.pref:hover {
+  color: rgb(156 163 175);
+}
+
+.pref:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.accept {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background-color: rgb(17 24 39);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept:hover {
+  background-color: rgb(55 65 81);
+}
+
+.accept:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
