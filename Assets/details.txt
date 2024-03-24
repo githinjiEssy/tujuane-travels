@@ -59,5 +59,16 @@
 </html>
 
 
-
+CREATE TABLE destinations (
+    id INTEGER PRIMARY KEY,
+    destination_name STRING,
+    country STRING,
+    city STRING,
+    description TEXT,
+    accommodation TEXT,
+    activities STRING,
+    ratings INTEGER,
+    img_url STRING
+);
   
+ruby seeds.rb
