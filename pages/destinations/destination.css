@@ -11,6 +11,8 @@
     --color-bg-2: #302E55;
     --border: .1rem solid #ff6700;
     
+    --surface-color: #ffffff;
+    --curve: 40;
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
@@ -80,3 +82,117 @@ html {
 .icon-btn i {
     font-size: 2rem;
 }
+/*========================================*/
+  
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);
+    border: solid 1px;
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--color-bg-2);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: var(--text-color-1);
+  }
+  
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: black;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  .rating {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+    color: var(--text-color-1);
+    font-weight: bold;
+    position: relative;
+    width: max-content;
+  }
+  
+  .rating:before {
+    content: "☆☆☆☆☆";
+  }
+  
+   .rating:after {
+    content: "★★★★";
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    width: calc(var(--rating) * 1%);
+    overflow: hidden;
+  }
+
+  .card__link {
+    padding: 0 2.3em 2em;
+    font-size: 1em;
+    color: orangered;
+  }
