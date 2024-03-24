@@ -70,5 +70,28 @@ CREATE TABLE destinations (
     ratings INTEGER,
     img_url STRING
 );
-  
+=====================================================  
 ruby seeds.rb
+
+====================================================
+.card > .rating {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  color: var(--ratingColor);
+  font-weight: bold;
+  position: relative;
+  width: max-content;
+}
+
+.card > .rating:before {
+  content: "☆☆☆☆☆";
+}
+
+.card > .rating:after {
+  content: "★★★★★";
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  width: calc(var(--rating) * 1%);
+  overflow: hidden;
+}

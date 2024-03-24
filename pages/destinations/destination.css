@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    /*========== Colors ==========*/
+    --color-primary: #FF6700;
+    --color-primary-variant: #F2A70C;
+    --title-color: #ececec;
+    --text-color-1: #ffffff;
+    --text-color-2: #0a0a0a;
+    --color-bg-1: #593C3C;
+    --color-bg-2: #302E55;
+    --border: .1rem solid #ff6700;
+    
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --transition: all 400ms ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+.navbar {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--color-bg-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav__logo {
+    height: 5rem;
+}
+ 
+.navbar .nav__links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav__links a{
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    color: var(--text-color-2);
+    cursor: pointer;
+    transition: var(--transition);
+ }
+ 
+ 
+.navbar .nav__links a:hover {
+    color: var(--color-primary);
+    border-bottom: solid var(--color-primary) .2rem;
+    padding-bottom: .5rem;
+}
+
+.icon-btn {
+    width: 7%;
+    height: 30px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    border-left: solid rgba(0, 0, 0, 0.75);
+}
+ 
+.icon-btn i {
+    font-size: 2rem;
+}
